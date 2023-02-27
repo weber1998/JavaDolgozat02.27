@@ -1,20 +1,51 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package aranyhal;
 
-/**
- *
- * @author weber.krisztian
- */
+import java.util.List;
+
 public class Aranyhal {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    private int KIVANSAGOKSZAMA = 3;
+    private int kor;
+    private List<String> kivansagok;
+    private String kifogta;
+
+    public Aranyhal(String kifogta) {
+        this.kifogta = kifogta;
     }
     
+    public Aranyhal(int kor, String kifogta) {
+        this.kor = kor;
+        this.kifogta = kifogta;
+    }
+    
+    public int getKor() {
+        return kor;
+    }
+    
+    public void setKifogta(String kifogta) {
+        this.kifogta = kifogta;
+    }
+
+    public int kivansagokSzama(String kifogta) {
+        return 0;
+    }    
+    
+    public String[] kikkelTalalkozott() {
+        String[] tomb = new String[10];
+        return tomb;
+    }
+    
+    public boolean kivansagotTeljesit(String kivansag) {
+        return true;
+    }
+    
+    @Override
+    public String toString() {
+        return "Aranyhal{" + '}';
+    }
+    
+    public static void main(String[] args) {
+        
+    }
 }
